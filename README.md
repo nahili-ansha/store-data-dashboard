@@ -53,9 +53,9 @@ GIF created with ...
 
 Describe any challenges encountered while building the app.
 
-**React version mismatches produced invalid hook errors initially; resolved by locking React to 18.2.0 and updating the type/dev deps accordingly.**
-**Routing required BrowserRouter to be mounted in main.jsx (fixed).**
-**Ensured chart components used fetched data and re-rendered correctly when filters changed.**
+- **React version mismatches produced invalid hook errors initially; resolved by locking React to 18.2.0 and updating the type/dev deps accordingly.**
+- **Routing required BrowserRouter to be mounted in main.jsx (fixed).**
+- **Ensured chart components used fetched data and re-rendered correctly when filters changed.**
 
 ## License
 
