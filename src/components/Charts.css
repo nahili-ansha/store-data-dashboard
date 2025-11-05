@@ -1,0 +1,27 @@
+.charts-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  background: rgba(255,255,255,0.02);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.chart-container {
+  background: rgba(255,255,255,0.03);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.chart-container h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+@media (max-width: 880px) {
+  .charts-row {
+    grid-template-columns: 1fr;
+  }
+}

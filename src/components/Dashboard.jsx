@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../App.css'
 import './Dashboard.css'
+import Charts from './Charts'
 
 // Dashboard using Fake Store API: https://fakestoreapi.com/products
 export default function Dashboard() {
@@ -88,6 +90,8 @@ export default function Dashboard() {
         </div>
       </section>
 
+      <Charts items={items} />
+
       <section className="controls-row">
         <input
           className="search"
@@ -124,11 +128,13 @@ export default function Dashboard() {
               {filtered.map((p) => (
                 <tr key={p.id}>
                   <td className="product-cell">
-                    <img src={p.image} alt={p.title} />
-                    <div>
-                      <div className="prod-title">{p.title}</div>
-                      <div className="prod-desc">{p.description.slice(0, 120)}{p.description.length > 120 ? '…' : ''}</div>
-                    </div>
+                    <Link to={`/product/${p.id}`} className="product-link">
+                      <img src={p.image} alt={p.title} />
+                      <div>
+                        <div className="prod-title">{p.title}</div>
+                        <div className="prod-desc">{p.description.slice(0, 120)}{p.description.length > 120 ? '…' : ''}</div>
+                      </div>
+                    </Link>
                   </td>
                   <td>{p.category}</td>
                   <td>${p.price.toFixed(2)}</td>
