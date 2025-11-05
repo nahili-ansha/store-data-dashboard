@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='[https://github.com/nahili-ansha/store-data-dashboard/blob/main/data-dashboard.gif](https://github.com/nahili-ansha/store-data-dashboard/blob/main/data-dashboard-part2.gif)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='(https://github.com/nahili-ansha/store-data-dashboard/blob/main/data-dashboard-part2.gif)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
